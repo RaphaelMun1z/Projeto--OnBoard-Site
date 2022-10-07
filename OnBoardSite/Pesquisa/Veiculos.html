@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/Veiculos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="shortcut icon" href="Imagens/icone_onboard.png"/> 
+	<title>On Board | Aeronaves</title>
+</head>
+<body>
+	<section class="header">
+		<p>Aeronaves</p>
+		<img src="Imagens/img1.png" alt="">
+		<div class="ordFilt">
+			<div class="base_ordFilt">
+				<p>Modelo</p>
+				<input type="text" placeholder="Digite aqui">
+			</div>
+			<div class="base_ordFilt">
+				<p>Ordenar por</p>
+				
+				<select class="form-select" aria-label="Default select example">
+				  	<option selected>Código</option>
+				  	<option value="1">Nome do modelo</option>
+				 	<option value="2">Nome da fabricante</option>
+				  	<option value="3">Potência</option>
+				  	<option value="3">Capacidade</option>
+				</select>
+			</div>
+			<div class="base_ordFilt">
+				<p>Filtrar</p>
+				<select class="form-select" aria-label="Default select example">
+				  	<option selected>Todos</option>
+				  	<option value="1">Helicópteros</option>
+				 	<option value="2">Aviões</option>
+				  	<option value="3">Outros</option>
+				</select>
+			</div>
+			<button id="btn_pesquisar">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</section>
+	<section class="base_geral">
+		<div class="base_card_veiculo" onmouseleave="changeImageSrc('1', 'Imagens/Challenger_650_Bombardier/img1.png')" >
+			<ul class="thumb_card_veiculo">
+				<li onmouseover="changeImageSrc('1', 'Imagens/Challenger_650_Bombardier/img1.png')">
+					<img src="Imagens/Challenger_650_Bombardier/img1.png" alt="">
+				</li>
+				<li onmouseover="changeImageSrc('1', 'Imagens/Challenger_650_Bombardier/img2.jpg')">
+					<img src="Imagens/Challenger_650_Bombardier/img2.jpg" alt="">
+				</li>
+				<li onmouseover="changeImageSrc('1', 'Imagens/Challenger_650_Bombardier/img3.jpg')">
+					<img src="Imagens/Challenger_650_Bombardier/img3.jpg" alt="">
+				</li>
+			</ul>
+			<div class="imgBox_card_veiculo">
+				<h2>Challenger 650<br/>Bombardier</h2>
+				<img src="Imagens/Challenger_650_Bombardier/img1.png" class="img_card_veiculo icv1">
+				<ul class="size_card_veiculo">
+					<span>Cor</span>
+					<li style="background-color: white"></li>
+					<li style="background-color: black"></li>
+					<li style="background-color: orange"></li>
+					<a href="#" class="btn_card_veiculo">Abrir</a>
+				</ul>
+			</div>
+		</div>
+		<div class="base_card_veiculo" onmouseleave="changeImageSrc('2', 'Imagens/Challenger_650_Bombardier/img1.png')" >
+			<ul class="thumb_card_veiculo">
+				<li onmouseover="changeImageSrc('2', 'Imagens/Challenger_650_Bombardier/img1.png')">
+					<img src="Imagens/Challenger_650_Bombardier/img1.png" alt="">
+				</li>
+				<li onmouseover="changeImageSrc('2', 'Imagens/Challenger_650_Bombardier/img2.jpg')">
+					<img src="Imagens/Challenger_650_Bombardier/img2.jpg" alt="">
+				</li>
+				<li onmouseover="changeImageSrc('2', 'Imagens/Challenger_650_Bombardier/img3.jpg')">
+					<img src="Imagens/Challenger_650_Bombardier/img3.jpg" alt="">
+				</li>
+			</ul>
+			<div class="imgBox_card_veiculo">
+				<h2>Challenger 650<br/>Bombardier</h2>
+				<img src="Imagens/Challenger_650_Bombardier/img1.png" class="img_card_veiculo icv2">
+				<ul class="size_card_veiculo">
+					<span>Cor</span>
+					<li style="background-color: white"></li>
+					<li style="background-color: black"></li>
+					<li style="background-color: orange"></li>
+					<a href="#" class="btn_card_veiculo">Abrir</a>
+				</ul>
+			</div>
+		</div>
+		<div class="base_card_veiculo" onmouseleave="changeImageSrc('3', 'Imagens/Challenger_650_Bombardier/img1.png')" >
+			<ul class="thumb_card_veiculo">
+				<li onmouseover="changeImageSrc('3', 'Imagens/Challenger_650_Bombardier/img1.png')">
+					<img src="Imagens/Challenger_650_Bombardier/img1.png" alt="">
+				</li>
+				<li onmouseover="changeImageSrc('3', 'Imagens/Challenger_650_Bombardier/img2.jpg')">
+					<img src="Imagens/Challenger_650_Bombardier/img2.jpg" alt="">
+				</li>
+				<li onmouseover="changeImageSrc('3', 'Imagens/Challenger_650_Bombardier/img3.jpg')">
+					<img src="Imagens/Challenger_650_Bombardier/img3.jpg" alt="">
+				</li>
+			</ul>
+			<div class="imgBox_card_veiculo">
+				<h2>Challenger 650<br/>Bombardier</h2>
+				<img src="Imagens/Challenger_650_Bombardier/img1.png" class="img_card_veiculo icv3">
+				<ul class="size_card_veiculo">
+					<span>Cor</span>
+					<li style="background-color: white"></li>
+					<li style="background-color: black"></li>
+					<li style="background-color: orange"></li>
+					<a href="#" class="btn_card_veiculo">Abrir</a>
+				</ul>
+			</div>
+		</div>
+	<div class="nenhum_resultado">
+		<img src="Imagens/erro.png" alt="">
+	</div>
+	</section>
+<script src="JS/Veiculos.js"></script>
+</body>
+</html>

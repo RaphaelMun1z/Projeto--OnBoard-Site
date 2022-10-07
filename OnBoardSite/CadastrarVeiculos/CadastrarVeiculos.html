@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/CadastrarVeiculos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="shortcut icon" href="Imagens/icone_onboard.png"/> 
+	<title>On Board | Cadastro Veículos</title>
+</head>
+<body>
+	<form action="" method="">
+		<div>
+			<h1>Cadastro de veículos</h1>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Modelo</span></p>
+				<input type="text">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Fabricante</span></p>
+				<input type="email">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Capacidade</span></p>
+				<input type="number">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Potência</span></p>
+				<input type="number">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Tipo</span></p>
+				<input type="text">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Classe</span></p>
+				<input type="text">
+			</div>	
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Turbinas</span></p>
+				<input type="number">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Quantidade</span></p>
+				<input type="number">
+			</div>	
+			<div id="cores">
+				<p><i class="fas fa-layer-group"></i><span>Cores</span></p>
+				Branco <input type="checkbox">
+				Preto <input type="checkbox">
+				Laranja <input type="checkbox">
+			</div>
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Descrição</span></p>
+				<input type="text">
+			</div>	
+			<div>
+				<p><i class="fas fa-layer-group"></i><span>Diária</span></p>
+				<input type="text">
+			</div>
+		</div>
+		<div id="parte2">
+
+			<div class="organiza">
+				<div class="center">
+					<div class="form-input">
+						<label for="file-ip-1">Imagem principal</label>
+						<input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event, 1);">
+						<div class="preview">
+							<img id="file-ip-1-preview">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="organiza">
+				<div class="center">
+					<div class="form-input">
+						<label for="file-ip-2">Imagem 2</label>
+						<input type="file" id="file-ip-2" accept="image/*" onchange="showPreview(event, 2);">
+						<div class="preview">
+							<img id="file-ip-2-preview">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="organiza">
+				<div class="center">
+					<div class="form-input">
+						<label for="file-ip-3">Imagem 3</label>
+						<input type="file" id="file-ip-3" accept="image/*" onchange="showPreview(event, 3);">
+						<div class="preview">
+							<img id="file-ip-3-preview">
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="submit"><i class="fas fa-sign-in-alt"></i><span>Cadastrar</span></button>
+		</div>
+	</form>
+<script src="JS/CadastrarVeiculos.js"></script>
+</body>
+</html>

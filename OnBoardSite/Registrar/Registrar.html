@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/Registrar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="shortcut icon" href="Imagens/icone_onboard.png"/> 
+	<title>On Board | Registrar</title>
+</head>
+<body>
+	<form method="POST" action="Acoes/registrarUsuario.php">
+		<div>
+			<h1>Login</h1>
+			<div>
+				<p><i class="fas fa-signature"></i><span>Nome</span></p>
+				<input type="text">
+			</div>
+			<div>
+				<p><i class="fas fa-at"></i><span>E-mail</span></p>
+				<input type="email">
+			</div>
+			<div>
+				<p><i class="fas fa-key"></i><span>Senha</span></p>
+				<input type="password" id="password">
+			</div>
+			<div>
+				<p><i class="fas fa-key"></i><span>Confirme sua senha</span></p>
+				<input type="password" id="confirm_password">
+			</div>
+			<button type="submit"><i class="fas fa-sign-in-alt"></i><span>Entrar</span></button>
+			<a href="#">Esqueci a senha.</a>
+		</div>
+		<div>
+			<img src="Imagens/foto.jpg" alt="">
+		</div>
+	</form>
+<script src="JS/Registrar.js"></script>
+</body>
+</html>

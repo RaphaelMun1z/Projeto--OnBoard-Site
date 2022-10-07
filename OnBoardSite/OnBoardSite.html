@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/OnBoardSite.css"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="shortcut icon" href="Imagens/icone_onboard.png"/> 
+	<title>On Board</title>
+</head>
+<body>
+	<header>
+		<nav id="barra_navegar">
+			<input type="checkbox" id="check">
+			<a href="#" id="logo"><img id="img_logo" src="Imagens/icone_onboard.png" alt="">On Board</a>
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<ul id="navBar">
+				<li><a href="#">Início</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#servicos">Serviços</a></li>
+				<li><a href="#veiculos">Veículos</a></li>
+				<li><a href="#planos">Planos</a></li> 
+				<li><a href="#">Entrar/Cadastrar</a></li>
+			</ul>
+		</nav>
+	<video src="Videos/aviao_video.mp4" autoplay="true" loop="true" muted="true"></video>
+	</header> 
+	<div class="base_titulo" id="sobre">
+		<p>Sobre</p>
+	</div>
+	<div class="base_sobre">
+		<div class="card_base">
+			<div class="imgBx">
+				<img src="Imagens/img1.png" alt="">
+			</div>
+			<div class="conteudo">
+				<h2>Nossos objetivos</h2>
+				<p>
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+				</p>
+			</div>
+		</div>
+		<div class="card_base">
+			<div class="imgBx">
+				<img src="Imagens/img2.png" alt="">
+			</div>
+			<div class="conteudo">
+				<h2>Gestão de negócios</h2>
+				<p>
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+				</p>
+			</div>
+		</div>
+		<div class="card_base">
+			<div class="imgBx">
+				<img src="Imagens/img3.jpeg" alt="">
+			</div>
+			<div class="conteudo">
+				<h2>Sistema híbrido</h2>
+				<p>
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="base_titulo" id="servicos">
+		<p>Serviços</p>
+	</div>
+	<div class="base_servicos">
+		<div class="card">
+			<div class="imgBx">
+				<img src="Imagens/img4.png" alt="">
+			</div>
+			<div class="conteudo">
+				<div>
+					<h3>Veículos aereos</h3>
+					<p>Lorem ipsum is placeholder text commonly used in the graphic.<span class="mais" id="mais1">Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.</span></p>
+					<a id="btn_mais1" onclick="lerMais(mais1, btn_mais1)">Ler mais</a>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBx">
+				<img src="Imagens/img5.png" alt="">
+			</div>
+			<div class="conteudo">
+				<div>
+					<h3>Veículos terrestres</h3>
+					<p>Lorem ipsum is placeholder text commonly used in the graphic.<span class="mais" id="mais2">Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.</span></p>
+					<a id="btn_mais2" onclick="lerMais(mais2, btn_mais2)">Ler mais</a>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBx">
+				<img src="Imagens/img6.png" alt="">
+			</div>
+			<div class="conteudo">
+				<div>
+					<h3>Veículos aquáticos</h3>
+					<p>Lorem ipsum is placeholder text commonly used in the graphic.<span class="mais" id="mais3">Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.Lorem ipsum is placeholder text commonly used in the graphic.</span></p>
+					<a id="btn_mais3" onclick="lerMais(mais3, btn_mais3)">Ler mais</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="base_percentual_servicos">
+		<div class="container_percentual_servicos">
+			<div class="card_percentual_servicos">
+				<div class="box_percentual_servicos">
+					<div>
+						<div class="percent_percentual_servicos">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70"></circle>
+							</svg>
+							<div class="number_percentual_servicos">
+								<h2>100<span>%</span></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text_percentual_servicos">Benefício</div>
+			</div>
+			<div class="card_percentual_servicos">
+				<div class="box_percentual_servicos">
+					<div>
+						<div class="percent_percentual_servicos">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70"></circle>
+							</svg>
+							<div class="number_percentual_servicos">
+								<h2>100<span>%</span></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text_percentual_servicos">Diversidade</div>
+			</div>
+			<div class="card_percentual_servicos">
+				<div class="box_percentual_servicos">
+					<div>
+						<div class="percent_percentual_servicos">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70"></circle>
+							</svg>
+							<div class="number_percentual_servicos">
+								<h2>100<span>%</span></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text_percentual_servicos">Inovação</div>
+			</div>
+			<div class="card_percentual_servicos">
+				<div class="box_percentual_servicos">
+					<div>
+						<div class="percent_percentual_servicos">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70"></circle>
+							</svg>
+							<div class="number_percentual_servicos">
+								<h2>100<span>%</span></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text_percentual_servicos">Atendimento</div>
+			</div>
+		</div>
+	</section>
+	<div class="base_titulo" id="veiculos">
+		<p>Veículos</p>
+	</div>
+	<div class="cards_veiculos">
+		<div class="card_veiculo card_veiculo_1">
+			<div class="base_card_veiculos">
+				<img src="Imagens/img7.jpeg" alt="">
+			</div>
+			<div class="detalhes_veiculos">
+				<h3>Conheça nossas aeronaves</h3>
+				<a class="btn_card_veiculo" href="#">conheçer</a>
+			</div>
+		</div>
+		<div class="card_veiculo card_veiculo_2">
+			<div class="base_card_veiculos">
+				<img src="Imagens/img8.jpg" alt="">
+			</div>
+			<div class="detalhes_veiculos">
+				<h3>Conheça nossos veículos terrestres</h3>
+				<a class="btn_card_veiculo" href="#">conheçer</a>
+			</div>
+		</div>
+		<div class="card_veiculo card_veiculo_3">
+			<div class="base_card_veiculos">
+				<img src="Imagens/img9.jpg" alt="">
+			</div>
+			<div class="detalhes_veiculos">
+				<h3>Conheça nossas embarcações</h3>
+				<a class="btn_card_veiculo" href="#">conheçer</a>
+			</div>
+		</div>
+	</div>
+	<div class="base_titulo" id="planos">
+		<p>Planos</p>
+	</div>
+	<section class="base_precos">
+		<div class="header_precos">
+			<div class="toggle">
+				<label>Anual</label>
+				<div class="toggle_btn">
+					<input type="checkbox" id="checkbox_preco">
+					<label for="checkbox_preco" class="sub" id="suv">
+						<div class="circle"></div>
+					</label>
+				</div>
+				<label>Mensal</label>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="card shadow">
+				<ul>
+					<li class="pack">Básico</li>
+					<li id="basic" class="price bottom_bar">
+						R&dollar; 
+					</li>
+					<li class="bottom-bar">1 mês de locação para<br>veículos de até R$500</li>
+					<li class="bottom-bar">Desconto de 5% na<br>primeira locação</li>
+					<li class="bottom-bar">Desconto de 5% para<br>veículos da categoria B</li>
+					<li>
+						<button class="btn">Adquirir</button>
+					</li>
+				</ul>		
+			</div>
+			<div class="card active">
+				<ul>
+					<li class="pack">Premium</li>
+					<li id="basic" class="price bottom_bar"> 
+						R&dollar; 
+					</li>
+					<li class="bottom-bar">1 mês de locação para<br>veículos de até R$1500</li>
+					<li class="bottom-bar">Desconto de 15% na<br>primeira locação</li>
+					<li class="bottom-bar">Desconto de 10% para<br>veículos da categoria A</li>
+					<li>
+						<button class="btn active_btn">Adquirir</button>
+					</li>
+				</ul>
+			</div>
+			<div class="card shadow">
+				<ul>
+					<li class="pack">Master</li>
+					<li id="basic" class="price bottom_bar">
+						R&dollar; 
+					</li>
+					<li class="bottom-bar">1 mês de locação para<br>veículos de até R$5000</li>
+					<li class="bottom-bar">Desconto de 50% na<br>primeira locação</li>
+					<li class="bottom-bar">Desconto de 15% para<br>veículos da categoria S</li>
+					<li>
+						<button class="btn">Adquirir</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="base_titulo" id="planos">
+		<p>Contato</p>
+	</div>
+	<section class="base_contato">
+		<div class="contato_box">
+			<div class="contato_imgBx">
+				<img src="Imagens/call.png" alt="">
+			</div>
+			<div class="contato_content">
+				<div class="contato_icon">
+					<img src="Imagens/call.png" alt="">
+				</div>
+				<h3>Telefone</h3>
+				<h4>+55 0800 123 4567</h4>
+				<h4>+55 0800 765 4321</h4>
+			</div>
+		</div>
+		<div class="contato_box">
+			<div class="contato_imgBx">
+				<img src="Imagens/map.png" alt="">
+			</div>
+			<div class="contato_content">
+				<div class="contato_icon">
+					<img src="Imagens/map.png" alt="">
+				</div>
+				<h3>Localização</h3>
+				<h4>Casqueiro, Cubatão - SP</h4>
+			</div>
+		</div>
+		<div class="contato_box">
+			<div class="contato_imgBx">
+				<img src="Imagens/open-email.png" alt="">
+			</div>
+			<div class="contato_content">
+				<div class="contato_icon">
+					<img src="Imagens/open-email.png" alt="">
+				</div>
+				<h3>E-mail</h3>
+				<h4>onboardoficial@hotmail.com</h4>
+				<h4>WolfDev_Oficial@outlook.com</h4>
+			</div>
+		</div>
+	</section>
+	<div class="base_titulo" id="planos">
+		<p>Vídeo motivacional</p>
+	</div>
+	<section class="base_video_motivacional">
+		<div class="video_motivacional_c_video">
+			<video class="video_motivacional" src="Videos/video_motivacional.mp4"></video>
+			<div class="video_motivacional_controls">
+				<div class="video_motivacional_bar">
+					<div class="video_motivacional_bar_inside"></div>
+				</div>
+				<div class="video_motivacional_btn">
+					<button id="play_video_motivacional"></button>
+				</div>	
+			</div>
+		</div>
+	</section>
+<script type="text/javascript" src="JS/OnBoardSite.js"></script>
+</body>
+</html>

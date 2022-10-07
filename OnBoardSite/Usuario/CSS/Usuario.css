@@ -1,0 +1,255 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+::-webkit-scrollbar-track {
+    background-color:  white;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+90deg, #062926, #687876);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body{ 
+	position: relative;
+	display: flex;
+	width: 100%;
+	background-color: whitesmoke;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 10px;
+}
+.container{
+	position: relative;
+	display: flex;
+	width: 80%;
+	height: auto;
+	flex-wrap: wrap;
+}
+.container header{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 20%;
+	background: white;
+    box-shadow: 0 0 2rem 0 rgb(168 180 194 / 37%);
+    border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.container header ul{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 5px 5px;
+}
+.container header ul li{
+	list-style: none;
+	margin: 0 10px;
+}
+.container header ul li a{
+	text-decoration: none;
+	font-size: max(1.4vw, 15px);
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.6);
+}
+.container header ul li a:hover{
+	color: rgba(0,0,0,1);
+}
+.container aside{
+	position: relative;
+	display: flex;
+	width: 30%;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 5px 20px 0 0;
+}
+.container aside .aux{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 5px;
+	background: white;
+    box-shadow: 0 0 2rem 0 rgb(168 180 194 / 37%);
+    border: 1px solid lightgrey;
+	padding: 15px 0;
+}
+.container aside .aux ul li:nth-child(2) a{
+	transition: 0.5s;
+}
+.container aside .aux ul li:nth-child(2) a:hover{
+	color: rgba(0,0,0,1);
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+.container aside .aux .img{
+	position: relative;
+	display: flex;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	align-self: center;
+	justify-self: flex-start;
+	object-fit: cover;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.container aside .aux .img img{
+	position: relative;
+	display: flex;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transform: scale(1.3);
+}
+.container aside .aux ul{
+	align-self: center;
+}
+.container aside .aux ul li{
+	list-style: none;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.container aside .aux ul li a{
+	text-decoration: none;
+	color: rgba(0,0,0,0.8);
+}
+.container aside .aux ul li:nth-child(1) a{
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: black;
+}
+.container aside .aux p{
+	position: relative;
+	display: flex;
+	text-align: center;
+	align-self: center;
+	margin-top: auto;
+	letter-spacing: 1px;
+	color: rgba(0,0,0,0.8);
+}
+.container div{
+	position: relative;
+	display: flex;
+	width: 70%;
+	height: 80%;
+	flex-wrap: wrap;
+	padding: 5px 0 0 0;
+}
+.container div section{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.container div section:nth-child(2),
+.container div section:nth-child(3),
+.container div section:nth-child(4),
+.container div section:nth-child(5){
+	margin-top: 15px;
+}
+.container div section .inside_section{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: white;
+    box-shadow: 0 0 2rem 0 rgb(168 180 194 / 37%);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.titulo{
+	position: relative;
+	display: flex;
+	width: min-content;
+	height: min-content;
+	align-self: flex-start;
+	font-size: 2rem;
+	padding: 5px 10px;
+	color: rgba(0,0,0,0.65);
+}
+.titulo:after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 2px;
+	background-color: rgba(0,0,0,0.65);
+	align-self: flex-end;
+}
+.container div section .inside_section .base_info_usuario{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: min-content;
+}
+.container div section .inside_section .base_info_usuario div{
+	font-size: 1rem;
+	width: 65%;
+	height: 100%;
+	padding: 5px 10px;
+	color: rgba(0,0,0,1);;
+}
+.container div section .inside_section .base_info_usuario div:nth-child(2){
+	color: rgba(0,0,0,0.6);
+}
+.container div section .inside_section .base_info_usuario div:nth-child(1){
+	width: 35% !important;
+}
+.container div section .inside_section .base_loc_usuario{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: fit-content;
+}
+.container div section .inside_section .base_loc_usuario:nth-child(2){
+	font-weight: 600;
+}
+.container div section .inside_section .base_loc_usuario div{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgba(0,0,0,0.8);
+	padding: 5px 5px;
+}
+.container div section .inside_section .base_loc_usuario:nth-child(2) div{
+	color: rgba(0,0,0,1);
+}
+.container div section .inside_section .base_loc_usuario div a{
+	text-decoration: none;
+	color: inherit;
+}
+@media (max-width: 768px){
+	.container aside{
+		width: 100%;
+		padding-right: 0;
+	}
+	.container div{
+		width: 100%;
+	}
+	.container header ul{
+		justify-content: center;
+	}
+}

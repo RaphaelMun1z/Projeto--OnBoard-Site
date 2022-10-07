@@ -1,0 +1,280 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+::-webkit-scrollbar-track {
+    background-color:  white;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #062926, #687876);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+body{ 
+	position: relative;
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+    background-color: #e9f0ef;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	overflow-x: hidden;
+}
+section.header{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: auto;
+	min-height: 50vh;
+	background: linear-gradient(90deg, #062926, #687876);
+	backdrop-filter: blur(20px);
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+section.header p{
+	position: relative;
+	display: flex;
+	width: min-content;
+	height: auto;
+	font-size: 4rem;
+	color: #fff;
+}
+section.header p:after{
+	content: '';
+	position: absolute;
+	display: flex;
+	width: 50%;
+	height: 5px;
+	background-color: #fff;
+	align-self: flex-end;
+}
+section.header img{
+	position: relative;
+	display: flex;
+	width: auto;
+	height: 250px;
+	object-fit: cover;
+}
+section.header div.ordFilt{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: auto;
+	background-color: rgba(0,0,0,0.5);
+	align-self: flex-end;
+	align-items: center;
+}
+section.base_geral{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+div.base_card_veiculo{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 30px 0;
+}
+div.base_card_veiculo ul.thumb_card_veiculo{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+div.base_card_veiculo ul.thumb_card_veiculo li{
+	list-style: none;
+	width: 100px;
+	height: 100px;
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255,255,255,0.2);
+	box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	border-radius: 20px;
+	backdrop-filter: blur(4px);
+	overflow: hidden;
+}
+div.base_card_veiculo ul.thumb_card_veiculo li img{
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+}
+div.base_card_veiculo ul.thumb_card_veiculo li:nth-child(1) img{
+	height: auto !important;
+	width: 90% !important;
+}
+div.base_card_veiculo ul.thumb_card_veiculo li:hover img{
+	transform: scale(1.5);
+}
+div.base_card_veiculo div.imgBox_card_veiculo{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 350px;
+	height: 100%;
+	background-color: rgba(255,255,255,0.2);
+	box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	border-radius: 20px;
+	backdrop-filter: blur(4px);
+	padding: 60px 20px;
+	padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+div.base_card_veiculo div.imgBox_card_veiculo h2{
+    color: rgba(0,0,0,0.7);
+	letter-spacing: 1px;
+	text-align: center;
+}
+div.base_card_veiculo div.imgBox_card_veiculo img{
+	width: 80%;
+	transition: 0.25s;
+	border-radius: 20px;
+}
+div.base_card_veiculo div.imgBox_card_veiculo img:hover{
+	transform: scale(1.5) translateX(20px);
+}
+div.base_card_veiculo div.imgBox_card_veiculo ul.size_card_veiculo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.base_card_veiculo div.imgBox_card_veiculo ul.size_card_veiculo span{
+	color: rgba(0,0,0,0.7);
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	margin-right: 5px;
+}
+div.base_card_veiculo div.imgBox_card_veiculo ul.size_card_veiculo li{
+	list-style: none;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	color: #1e6b7b;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	border-radius: 4px;
+	font-weight: 700;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: 0.25s;
+	display: flex;
+}
+div.base_card_veiculo div.imgBox_card_veiculo ul.size_card_veiculo li:hover{
+	transform: translateY(-10px);
+}
+div.base_card_veiculo div.imgBox_card_veiculo a.btn_card_veiculo{
+	position: absolute;
+	bottom: -30px;
+	background-color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 30px;
+	border-radius: 30px;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+	font-weight: 500;
+	color: #1e6b7b;
+	transition: 0.25s;
+}
+div.base_card_veiculo div.imgBox_card_veiculo a.btn_card_veiculo:hover{
+	letter-spacing: 2px;
+}
+div.base_ordFilt{
+	position: relative;
+	display: flex;
+	width: auto;
+	height: 100%;
+	justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+    margin: 0 5px;
+}
+div.base_ordFilt p{
+	position: relative !important;
+	display: inline-block !important;
+	font-size: 1rem !important;
+	white-space: nowrap !important;
+	margin: 0 5px;
+}
+div.base_ordFilt p:after{
+	display: none !important;
+}
+div.base_ordFilt select{
+	position: relative;
+	display: flex;
+	width: min-content;
+	height: 100%;
+}
+div.ordFilt button#btn_pesquisar{
+	position: relative;
+	display: flex;
+	width: auto;
+	height: 90%;
+	border: none;
+	color: white;
+	background-color: transparent;
+	font-size: 1rem;
+	border:1px solid white;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+div.ordFilt button#btn_pesquisar:hover{
+	color: rgba(255,255,255,0.5);
+	border-color: rgba(255,255,255,0.5);
+}
+.nenhum_resultado{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 50vh;
+	background-color: transparent;
+	justify-content: center;
+	align-items: center;
+}
+.nenhum_resultado img{
+	object-fit: cover;
+	height: 60%;
+	filter: grayscale(1);
+}
+@media (max-width: 768px){
+	section.header p {
+		font-size: 3rem;
+	}
+	section.header img{
+		padding: 30px;
+	}
+	section.header div.ordFilt {
+		align-items: flex-start;
+    	flex-direction: column;
+	}    
+	div.ordFilt button#btn_pesquisar{
+		margin: 5px 15px;
+	}
+} 
